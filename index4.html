@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>RGBGuessr(No Color Change & 入力ver.)</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    
+    
+    <meta property="og:url" content="https://takuto1014.github.io/RGBGuessr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RGBGuessr">
+    <meta property="og:description" content="世界中で空前絶後の大ブーム！今すぐあなたもこのリンクからRGBGuessrをプレイしよう
+    ！！">
+    <meta property="og:site_name" content="RGBGuessr">
+    <meta property="og:image" content="https://takuto1014.github.io/RGBGuessr/RgbGuessr共有.jpg">
+</head>
+<body>
+    <div id="contents">
+        <center
+        ><a href="index.html"><img id="title_image" src="RgbGuessr横長.jpg" alt="" width="60%"></a>
+            <div id="title"></div>
+            
+
+            <a type="text" id="myrecord1" class="text1"></a>
+            <a type="text" id="myrecord2" class="text1"></a><br>
+            <a type="text" id="prerecord" class="text1"></a>
+            <a type="text" id="ao5record" class="text1"></a>
+            <!-- 問題表示 -->
+            <p type="text" class="text2">Let's Guess!</p>
+            
+            <div id="sample" 
+            style="
+            height: 90px;
+            width: wide;"></div>
+
+            
+            <!-- 入力部分 -->
+            <div class="flex">
+                <div>
+                    <p class="heading red">R(Red)</p>
+                    <input type="number" id="R_number" value="0" min="0" max="255">
+                </div>
+                <div>
+                    <p class="heading green">G(Green)</p>
+                    <input  type="number" id="G_number" value="0" min="0" max="255">
+                </div>
+                <div>
+                    <p class="heading blue">B(Blue)</p>
+                    <input type="number" id="B_number" value="0" min="0" max="255"><br><br>
+                </div>
+            </div>
+            <p type="text" id="count"></p>
+            <input type="button" value="Guess!" onclick="judgement();" class="btn-gradient-3d-simple button1"><br>
+            <audio src="../033_RGBguessr2/applause.mp3" controls id="music" hidden></audio>
+            
+
+            <h3>Result (No Color Change)</h3>
+            <p type="text" id="score" class="score" ></p>
+            <div class="flex">
+                <div class="left">    
+                    <div id="result1" style="height: 150px; width: 200px;"></div>
+                    <p type="text" id="answer1" class="" ></p>
+                </div>
+                <div class="right">
+                    <div id="result2" style="height: 150px; width: 200px;"></div>
+                    <p type="text" id="answer2" class="" ></p>
+                </div>
+                
+            </div>
+            <div class="flex">
+                <div>
+                <input type="button" value="Retry" onclick="restart()" class="btn-gradient-3d-simple button1"><br>
+                </div>
+                <div>
+                <input type="button" value="Reset" onclick="record_delete()" class="btn-gradient-3d-simple button1"><br>
+                </div>
+            </div>
+            <h3>Records (No Color Change)</h3>
+            <div id="result"></div>
+            </center>
+    </div>
+    <script type="text/javascript" src="index4.js"></script>
+</body>
+</html>

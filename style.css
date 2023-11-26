@@ -1,0 +1,148 @@
+body {
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+.text1{
+    font-size: 13pt;
+}
+.text2{
+    font-size: 12pt;
+    height:4pt;
+}
+.score{
+    font-size: 20pt;
+}
+.heading{
+    color: hsl(207, 72%, 52%);
+    /* border: solid 4px black;左側の線 */
+    /* border-right: solid 2px #2d8fdd;右側の線 */
+    /* background: #f1f8ff;背景色 */
+    margin-bottom: 10px;/*下のバーとの余白*/
+    margin-right: 2px;
+    line-height: 1.5;
+    padding: 0.5em;
+    font-weight: 500;
+    list-style-type: none!important;/*ポチ消す*/
+    
+}
+.heading2{
+    color: #2d8fdd;
+    border-left: solid 6px #2d8fdd;/*左側の線*/
+    background: #f1f8ff;/*背景色*/
+    margin-bottom: 3px;/*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+    font-weight: bold;
+}
+#count{
+    margin-bottom: -12pt;
+    margin-top:8pt;
+}
+.red{
+    background-color: rgba(255, 0, 0, 0.600);
+    color:white;
+    font-weight: bold;
+}
+.red2{
+    background-color: rgb(255, 0, 0);
+    color:white;
+    font-weight: bold;
+}
+.green{
+    background-color: rgba(0, 255, 0, 0.600);
+    color:white;
+    font-weight: bold;
+}
+.green2{
+    background-color: rgb(0, 255, 0);
+    color:white;
+    font-weight: bold;
+}
+.blue{
+    background-color: rgb(00, 00, 255, 0.600);
+    color:white;
+    font-weight: bold;
+}
+.blue2{
+    background-color: rgb(0, 0, 255);
+    color:white;
+    font-weight: bold;
+}
+.btn-gradient-3d-simple {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0;
+    /* text-decoration: none; */
+    font-weight: bold;
+    border-radius: 4px;
+    color: #ffffff;
+    background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #5e7fca;
+}
+.btn-gradient-3d-simple:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+    }
+.button1{
+    margin: 15px;
+}
+.button2{
+    margin: 20px;
+}
+
+input {
+    width: 80pt;
+    font-size: 20px;
+    text-align: center;
+}
+.input-range{
+    width: 60%;
+}
+
+h3 {
+    font-size: 20pt;
+    padding: 1rem 3rem;
+    /* -webkit-transform: skew(-15deg);
+    transform: skew(-15deg); */
+    color: #fff;
+    background-image: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
+    background-image: -webkit-linear-gradient(left, #209cff 0%, #68e0cf 100%);
+    background-image: linear-gradient(to right, #209cff 0%, #68e0cf 100%);
+}
+
+.btn-square {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    background:#20A4F4;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+    font-weight: bold;
+    
+}
+.btn-square:active {
+/*ボタンを押したとき*/
+-webkit-transform: translateY(4px);
+transform: translateY(4px);/*下に動く*/
+border-bottom: none;/*線を消す*/
+}
+
+.flex{
+    /*コレ追加*/display: flex;
+    justify-content: center;
+}
+
+.stage_number{
+    font-size: 30px;
+}
