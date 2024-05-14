@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>RGBGuessr マッチング</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    
+    
+    <meta property="og:url" content="https://takuto1014.github.io/RGBGuessr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RGBGuessr">
+    <meta property="og:description" content="世界中で空前絶後の大ブーム！今すぐあなたもRGBGuessrをプレイしよう
+    ！！">
+    <meta property="og:site_name" content="RGBGuessr">
+    <meta property="og:image" content="https://takuto1014.github.io/RGBGuessr/RgbGuessr共有.jpg">
+</head>
+<body>
+    <div id="contents">
+        <center>         
+            <!-- ロゴ -->
+            <a href="index.html"><img id="title_image" src="RgbGuessr横長.jpg" alt="" width="200px"></a><br>
+            <!-- <a id="victory_road"></a><br> -->
+            <!-- 問題表示 -->
+            <p class="heading2_matching">マッチング</p>
+
+            <div class="frame">
+                <div class="frame-title caution"><span type="text" class="LetsGuess">Let's Guess!</span></div>
+                <div id="question_color" style="height: 50px; width:auto ;"></div>
+            </div>
+            <!-- 入力部分 -->
+            <div class="slider">
+                <form oninput="op.value=r_bar.value">
+                    <a class="red">R</a>
+                    <input type="range" id="R_number" value="128" min="0" max="255" step="1" name="r_bar"  width="wide" class="input-range R-range">
+                    <output name="op" class="value_output">0</output>
+                </form>
+            </div>
+            <div class="slider">
+                <form oninput="op.value=g_bar.value">
+                    <a class="green">G</a>
+                    <input type="range" id="G_number" value="128" min="0" max="255" step="1" name="g_bar" width="wide" class="input-range G-range">
+                    <output name="op" class="value_output">0</output>
+                </form>
+            </div>
+            <div class="slider">
+                <form oninput="op.value=b_bar.value">
+                    <a class="blue">B</a>
+                    <input type="range" id="B_number" value="128" min="0" max="255" step="1" name="b_bar" width="wide" class="input-range B-range">
+                    <output name="op" class="value_output">0</output>
+                </form>
+            </div>
+
+            <div id="input_check_color" style="height: 50px; width:90% ;"></div>
+
+            <!-- 回数表示
+            <p type="text" id="count" hidden></p> -->
+            <p id="timer"></p>
+            <input type="button" value="Guess!" id="guess_button" onclick="Guess_Action();" class="button button1"><br>
+            <audio src="../033_RGBguessr2/applause.mp3" controls id="music" hidden></audio>
+            
+
+            <!-- <h3 id="title_result">リザルト</h3> -->
+            <h1 type="text" id="score" class="score"></h1>
+            <p id="score_detail" style="color:red;font-weight: bold;"></p>
+            <p id="new_record"></p>
+            <div class="flex answer_preview">
+                <div class="left">   
+                    <div id="answer_color" style="height: 50px; width: 150px;"></div>
+                    <p type="text" id="answer_rgb" class="" ></p>
+                </div>
+                <div class="right">
+                    <div id="input_color" style="height: 50px; width: 150px;"></div>
+                    <p type="text" id="input_rgb" class="" ></p>
+                </div>
+            </div>
+            <div class="flex">
+                <div>
+                <a href="#contents"><input type="button" value="リトライ"
+                onclick="restart()"
+                id="secret" class="button button2" ></a><br>
+                </div>
+                <div>
+                <input type="button" value="リセット" id="all_delete" class="button button2"><br>
+                </div>
+            </div>
+            <div id='idKeyDisplay'>
+            </div>
+            <p class="heading2">Record</p>
+            <!-- 記録表示 -->
+            <a type="text" id="my_1record" class="text1"></a>
+            <a type="text" id="my_ao5record" class="text1"></a><br>
+            <!-- <a type="text" id="pre_1record" class="text2"></a>
+            <a type="text" id="pre_ao5record" class="text2"></a><br> -->
+        
+            <!-- 記録一覧 -->
+            <div id="result" class="result"></div>
+        </center>
+        <footer>
+            <a href="fJpMDEXFiMwi5K3BeAWDsOvWGeNQ7X4lSHYOUf3eNhViTPUPgFVQXY4qoyEJYTYKEGQy0hC8XNptFRRVi8ShvneDkxMtMJaqHHNa.html" style="text-decoration: none;font-size: 14px;color: #606060;">&copy;2023-2024 Takutonkatsu</a>    
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/matching.js"></script>
+</body>
+</html>

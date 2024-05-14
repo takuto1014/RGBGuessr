@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>RGBGuessr 裏世界</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+    
+    
+    <meta property="og:url" content="https://takuto1014.github.io/RGBGuessr/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RGBGuessr">
+    <meta property="og:description" content="世界中で空前絶後の大ブーム！今すぐあなたもこのリンクからRGBGuessrをプレイしよう
+    ！！">
+    <meta property="og:site_name" content="RGBGuessr">
+    <meta property="og:image" content="https://takuto1014.github.io/RGBGuessr/RgbGuessr共有.jpg">
+</head>
+<body>
+    <div id="contents">
+        <center>         
+            <!-- ロゴ -->
+            <a href="index.html"><img id="title_image" src="img/RgbGuessr横長.jpg" alt="" width="250px"></a><br>
+            <!-- <a id="victory_road"></a><br> -->
+            <!-- 色表示 -->
+            <p class="heading2_anotherworld">裏世界</p>
+            <div id="input_check_color" style="height: 50px; width:90% ;"></div>
+
+            <!-- 入力部分 -->
+            <div class="slider">
+                <form oninput="op.value=r_bar.value">
+                    <a class="red">R</a>
+                    <input type="range" id="R_number" value="128" min="0" max="255" step="1" name="r_bar"  width="wide" class="input-range R-range">
+                    <output name="op" class="value_output">128</output>
+                </form>
+            </div>
+            <div class="slider">
+                <form oninput="op.value=g_bar.value">
+                    <a class="green">G</a>
+                    <input type="range" id="G_number" value="128" min="0" max="255" step="1" name="g_bar" width="wide" class="input-range G-range">
+                    <output name="op" class="value_output">128</output>
+                </form>
+            </div>
+            <div class="slider">
+                <form oninput="op.value=b_bar.value">
+                    <a class="blue">B</a>
+                    <input type="range" id="B_number" value="128" min="0" max="255" step="1" name="b_bar" width="wide" class="input-range B-range">
+                    <output name="op" class="value_output">128</output>
+                </form>
+            </div>
+            <!-- 回数表示
+            <p type="text" id="count" hidden></p> -->
+            <p id="timer"></p>
+            <input type="button" value="色保存" id="guess_button" onclick="Guess_Action();" class="button button1">
+            <audio src="../033_RGBguessr2/applause.mp3" controls id="music" hidden></audio>
+            <input type="button" value="リセット" id="all_delete" class="button button2"><br>
+            
+            <p class="heading2">ストレージ</p>
+            
+            <!-- 記録一覧 -->
+            <div id="result" class="result"></div>
+            
+        </center>
+    </div>
+    <script type="text/javascript" src="js/another_world.js"></script>
+</body>
+</html>
