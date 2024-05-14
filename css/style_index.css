@@ -1,0 +1,161 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+body {
+    font-family: 'Noto Sans JP',"Helvetica",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Meiryo",
+    sans-serif;
+    line-height: 170%;
+    color: #606060;
+
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 0 0px;
+    text-align: center;
+    color: #606060;
+}
+/*--------------------
+オリジナルのフレーム
+--------------------*/
+.frame {
+    width: 90%;
+    margin: 0px auto 10px;
+    padding: 0px 5px 0px 5px;
+    border: 3px solid #aaa;
+    position: relative;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 11px;
+    line-height: 120%;
+}
+.frame-title {
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    padding: 0 5px;
+    background-color: #fff;
+}
+.frame-title .fa {
+    margin-right: 5px;
+}
+.caution {
+    background-color: #ff4500;
+    border: 2px solid #ff4500;
+    color: #fff;
+    border-radius: 3px;
+}
+.frame-red {
+    border-color: #ff4500;
+}
+/*--------------------
+オリジナルのフレーム
+--------------------*/
+
+.text1{
+    font-size: 14pt;
+    color:#404040;
+    /* font-weight: bold; */
+}
+
+img.img_border{
+    border: solid 2px #dddddd; 
+    padding: 10px;
+}
+
+.copyright{
+    font-size: 10pt;
+    margin-top: -12pt;
+}
+
+.explanation{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    width: 90%;
+}
+
+.heading2{
+    color: #555555;
+    border-left: solid 6px #555555;/*左側の線*/
+    background:#e0e0e0;/*背景色*/
+    margin-bottom: 10px;/*下のバーとの余白*/
+    line-height: 1.0;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+    
+}
+.heading2_matching{
+    color: #ffffff;
+    border-left: solid 6px #ee0000;/*左側の線*/
+    background: #ff7070;/*背景色*/
+    margin-bottom: 10px;/*下のバーとの余白*/
+    line-height: 1.0;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+}
+.heading2_original{
+    color: #ffffff;
+    border-left: solid 6px #00cc00;/*左側の線*/
+    background: #50e850;/*背景色*/
+    margin-bottom: 10px;/*下のバーとの余白*/
+    line-height: 1.0;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+}
+.heading2_challenge{
+    color: #ffffff;
+    border-left: solid 6px #0000cc;/*左側の線*/
+    background: #7070ff;/*背景色*/
+    margin-bottom: 10px;/*下のバーとの余白*/
+    line-height: 1.0;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: center;
+}
+
+.btn-square {
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    background:#20A4F4;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #808080;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bolder;
+    
+}
+.btn-square:active {
+/*ボタンを押したとき*/
+-webkit-transform: translateY(4px);
+transform: translateY(4px);/*下に動く*/
+border-bottom: solid 2px #808080;/*線を消す*/
+}
+
+.btn1{
+    margin: 5px 10px 5px 15px;
+}
+.btn2{
+    margin: 5px 10px 5px 0px;
+    
+}
+
+/* 目次 */
