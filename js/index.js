@@ -17,13 +17,13 @@ if(myrecord==5000){
 }
 
 //AO5 4950点以上バッジ
-Ao5record = localStorage.getItem("my_ao5record");
-if(Ao5record>=4990){
-    document.getElementById("title_image").src="img/RgbGuessrGod.jpg"
+// Ao5record = localStorage.getItem("my_ao5record");
+// if(Ao5record>=4990){
+//     document.getElementById("title_image").src="img/RgbGuessrGod.jpg"
 
-}else if(Ao5record>=4950){
-    document.getElementById("title_image").src="img/RgbGuessrPro.jpg"
-} 
+// }else if(Ao5record>=4950){
+//     document.getElementById("title_image").src="img/RgbGuessrPro.jpg"
+// } 
 
 // PB表示
 myrecord = localStorage.getItem("my_1record");
