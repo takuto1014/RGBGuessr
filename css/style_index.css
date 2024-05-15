@@ -70,7 +70,8 @@ img.img_border{
 
 .copyright{
     font-size: 10pt;
-    margin-top: -12pt;
+    margin-top: -18pt;
+    margin-bottom: 22pt;
 }
 
 .explanation{
@@ -82,9 +83,9 @@ img.img_border{
 }
 
 .heading2{
-    color: #555555;
-    border-left: solid 6px #555555;/*左側の線*/
-    background:#e0e0e0;/*背景色*/
+    color: #fff;
+    border-left: solid 6px #000;/*左側の線*/
+    background:#666;/*背景色*/
     margin-bottom: 10px;/*下のバーとの余白*/
     line-height: 1.0;
     padding: 0.5em;
