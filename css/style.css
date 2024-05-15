@@ -52,7 +52,11 @@ footer{
 オリジナルのフレーム
 --------------------*/
 
-
+.copyright{
+    font-size: 10pt;
+    margin-top: -11pt;
+    margin-bottom: 15pt;
+}
 .LetsGuess{
     /* font-family: 'Times New Roman', Times, serif; */
     font-size: 16px;
@@ -207,13 +211,13 @@ h3 {
 }
 .heading2_anotherworld{
     color: #ffffff;
-    background-color: #000;
+    background-color: #222;
     margin: 0 0 20px 0;/*下のバーとの余白*/
     line-height: 1.0;
     padding: 0.7em 0.5em;
     list-style-type: none!important;/*ポチ消す*/
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 18pt;
     text-align: center;
 }
 #count{
