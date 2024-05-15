@@ -54,8 +54,9 @@ footer{
 
 .copyright{
     font-size: 10pt;
-    margin-top: -11pt;
+    margin-top: -10pt;
     margin-bottom: 15pt;
+    color: #606060;
 }
 .LetsGuess{
     /* font-family: 'Times New Roman', Times, serif; */
