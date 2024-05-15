@@ -94,6 +94,11 @@ output{
     font-size: 11pt;
     margin: 0 0 2px 0;
 }
+.text5{
+    font-size: 13pt;
+    font-weight: bold;
+}
+
 .result{
     margin-left:10px;
     /* margin-right: auto; */
