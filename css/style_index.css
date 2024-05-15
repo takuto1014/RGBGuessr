@@ -86,7 +86,7 @@ img.img_border{
 .heading2{
     color: #fff;
     border-left: solid 6px #000;/*左側の線*/
-    background:#666;/*背景色*/
+    background:#777;/*背景色*/
     margin-bottom: 10px;/*下のバーとの余白*/
     line-height: 1.0;
     padding: 0.5em;
@@ -98,8 +98,8 @@ img.img_border{
 }
 .heading2_matching{
     color: #ffffff;
-    border-left: solid 6px #ee0000;/*左側の線*/
-    background: #ff7070;/*背景色*/
+    border-left: solid 6px #dd0000;/*左側の線*/
+    background: #ff4040;/*背景色*/
     margin-bottom: 10px;/*下のバーとの余白*/
     line-height: 1.0;
     padding: 0.5em;
@@ -110,7 +110,7 @@ img.img_border{
 }
 .heading2_original{
     color: #ffffff;
-    border-left: solid 6px #00cc00;/*左側の線*/
+    border-left: solid 6px #00bb00;/*左側の線*/
     background: #50e850;/*背景色*/
     margin-bottom: 10px;/*下のバーとの余白*/
     line-height: 1.0;

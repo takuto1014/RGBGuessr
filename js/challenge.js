@@ -75,10 +75,12 @@ function judgement(){
         result = result + "ステージ"+i+"("+aim_scores[i-1]+"): <b>"+localStorage.getItem("4stage_number"+i)+"点</b><br>　問題&nbsp;<a style=\"background-color:"+localStorage.getItem("4answer_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("4answer_rgb"+i)+"<br>　回答&nbsp;<a style=\"background-color:"+localStorage.getItem("4input_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("4input_rgb"+i)+"<br>"
     }
     document.getElementById("result").innerHTML = result
+
     stage_record = localStorage.getItem("4stage_record");
     if(stage_record!=null){
         document.getElementById("stage_record").innerText = "PB　ステージ"+stage_record
     }
+    
     
     //LetsGuess ~ Guessボタン削除(非表示)
     var question = document.getElementById("question")
@@ -172,15 +174,14 @@ function Result(){
     if(score>=aim_scores[stage_number-1]){
 
         // PB判定
-        localStorage.getItem("4stage_record")
-        if(stage_number>stage_record){
+        if(Number(stage_number)>Number(stage_record)){
             localStorage.setItem("4stage_record",stage_number)
             document.getElementById("score").innerHTML = "Clear!"
             document.getElementById("point").innerHTML = "ステージ"+stage_number+": "+point;
             document.getElementById("new_record").innerText ="New Record!";
             document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
             document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
-
+            
         }else{
             document.getElementById("score").innerHTML = "Clear!";
             document.getElementById("point").innerHTML = "ステージ"+stage_number+": "+point;
@@ -192,6 +193,8 @@ function Result(){
             document.getElementById("next_button").disabled = true
             // document.getElementById("restart_button").disabled = false
             localStorage.removeItem("4stage_number")
+            document.getElementById("next_button").value = "最初から"
+            document.getElementById("next_button").id = "restart"
         
         }
         
@@ -207,8 +210,7 @@ function Result(){
         stage_number++
         localStorage.setItem("4stage_number", stage_number)
 
-
-
+        
     }else{
         document.getElementById("score").innerHTML = "You Lose!";
         document.getElementById("point").innerHTML = "ステージ"+stage_number+": "+point;
