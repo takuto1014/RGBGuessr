@@ -4,6 +4,9 @@ AppearColor();
 // ボタン回数初期化
 let Counter = 0
 
+answer = document.getElementById("answer")
+answer.hidden = "true"
+
 // 記録表示
 MyRecord();
 
@@ -79,10 +82,13 @@ function Guess_Action(){
 
     document.getElementById("result").innerHTML = result
 
+    //LetsGuess ~ Guessボタン削除(非表示)
+    var question = document.getElementById("question")
+    question.remove();
 
-    //guessボタン削除(非表示)
-    var judge_button = document.getElementById("guess_button")
-    judge_button.remove();
+    //answer部分表示
+    answer = document.getElementById("answer")
+    answer.hidden = ""
 }
 
 
@@ -136,12 +142,12 @@ function Result(){
         localStorage.setItem("my_1record",score);
         document.getElementById("score").innerText = point;
         document.getElementById("new_record").innerText ="New Record!";
-        document.getElementById("answer_rgb").innerHTML = "問題("+R_s+","+G_s+","+B_s+")";
-        document.getElementById("input_rgb").innerHTML = "回答("+R_n+","+G_n+","+B_n+")";
+        document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
+        document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
     }else{
         document.getElementById("score").innerText = point
-        document.getElementById("answer_rgb").innerHTML = "問題("+R_s+","+G_s+","+B_s+")";
-        document.getElementById("input_rgb").innerHTML = "回答("+R_n+","+G_n+","+B_n+")";
+        document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
+        document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
     }
     //記録&色(16進数と括弧表示)保存
     localStorage.setItem("score"+value,score)

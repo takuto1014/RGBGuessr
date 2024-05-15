@@ -4,6 +4,9 @@ AppearColor();
 // ボタン回数初期化
 let Counter = 0
 
+answer = document.getElementById("answer")
+answer.hidden = "true"
+
 // 記録表示
 MyRecord();
 
@@ -163,16 +166,14 @@ function Guess_Action(){
     //localStorageに一時保存したrgb値を削除
     localStorage.removeItem("2RGB_Temporary")
     
-    //回答色確認削除(非表示)
-    var input_check_color = document.getElementById("input_check_color")
-    input_check_color.remove();
-    //guessボタン削除(非表示)
-    var judge_button = document.getElementById("guess_button")
-    judge_button.remove();
+    
+    //LetsGuess ~ Guessボタン削除(非表示)
+    var question = document.getElementById("question")
+    question.remove();
 
-    //タイマー削除(非表示)
-    var timer_display = document.getElementById("timer")
-    timer_display.remove();
+    //answer部分表示
+    answer = document.getElementById("answer")
+    answer.hidden = ""
 
     //タイマーリセット
     localStorage.setItem("2timer_OnOff","Off")
@@ -242,19 +243,19 @@ function Result(){
         document.getElementById("score").innerHTML= score+"点";
         document.getElementById("score_detail").innerText = "Color:"+color_score+"点 Time:"+time_score+"点 ("+result_time +"秒)"
         document.getElementById("new_record").innerText ="New Record!";
-        document.getElementById("answer_rgb").innerHTML = "問題("+R_s+","+G_s+","+B_s+")";
-        document.getElementById("input_rgb").innerHTML = "回答("+R_n+","+G_n+","+B_n+")";
+        document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
+        document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
     }else if(score == 0){
         document.getElementById("score").innerHTML= score+"点";
         document.getElementById("score_detail").innerText = "Color:"+color_score+"点 Time:-"+color_score+"点 ("+result_time +"秒)"
-        document.getElementById("answer_rgb").innerHTML = "問題("+R_s+","+G_s+","+B_s+")";
-        document.getElementById("input_rgb").innerHTML = "回答("+R_n+","+G_n+","+B_n+")";
+        document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
+        document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
     
     }else{
         document.getElementById("score").innerHTML= score+"点";
         document.getElementById("score_detail").innerText = "Color:"+color_score+"点 Time:"+time_score+"点 ("+result_time +"秒)"
-        document.getElementById("answer_rgb").innerHTML = "問題("+R_s+","+G_s+","+B_s+")";
-        document.getElementById("input_rgb").innerHTML = "回答("+R_n+","+G_n+","+B_n+")";
+        document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
+        document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
     }
     //記録&色(16進数と括弧表示)保存
     localStorage.setItem("2score"+value,score)

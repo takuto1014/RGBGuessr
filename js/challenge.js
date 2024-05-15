@@ -22,6 +22,11 @@ document.getElementById("next_button").disabled = true
 // ボタン押した回数の初期化
 Counter = 0
 
+//answer部分の非表示
+answer = document.getElementById("answer")
+answer.hidden = "true"
+
+
 // ステージの初期化
 stage_number = localStorage.getItem("4stage_number")
 
@@ -75,9 +80,13 @@ function judgement(){
         document.getElementById("stage_record").innerText = "PB　ステージ"+stage_record
     }
     
-    //guessボタン削除(非表示)
-    var judge_button = document.getElementById("guess_button")
-    judge_button.remove();
+    //LetsGuess ~ Guessボタン削除(非表示)
+    var question = document.getElementById("question")
+    question.remove();
+
+    //answer部分表示
+    answer = document.getElementById("answer")
+    answer.hidden = ""
 
 }
 
@@ -169,14 +178,14 @@ function Result(){
             document.getElementById("score").innerHTML = "Clear!"
             document.getElementById("point").innerHTML = "ステージ"+stage_number+": "+point;
             document.getElementById("new_record").innerText ="New Record!";
-            document.getElementById("answer_rgb").innerHTML = "問題("+R_s+","+G_s+","+B_s+")";
-            document.getElementById("input_rgb").innerHTML = "回答("+R_n+","+G_n+","+B_n+")";
+            document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
+            document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
 
         }else{
             document.getElementById("score").innerHTML = "Clear!";
             document.getElementById("point").innerHTML = "ステージ"+stage_number+": "+point;
-            document.getElementById("answer_rgb").innerHTML = "問題("+R_s+","+G_s+","+B_s+")";
-            document.getElementById("input_rgb").innerHTML = "回答("+R_n+","+G_n+","+B_n+")";
+            document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
+            document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
         }
         if(stage_number==25){
             document.getElementById("score").innerHTML = " Congratulations! 完全クリア!";
