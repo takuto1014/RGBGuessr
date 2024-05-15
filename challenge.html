@@ -25,67 +25,70 @@
         ><a href="index.html"><img id="title_image" src="img/RgbGuessr横長.jpg" alt="" width="200px"></a>
         <p class="heading2_challenge">チャレンジ</p>
         
-        <div style="margin-bottom: 15px;">
-            <a id="stage_number" class="text1"></a>
-            <a type="text" id="aim_score" class="text3"></a><br>
-        </div>
-        <!-- 問題表示 -->
-        <div class="frame">
-            <div class="frame-title caution"><span type="text" class="LetsGuess">Let's Guess!</span></div>
-            <div id="sample" style="height: 50px; width:auto ;"></div>
-        </div>
+        <div id="question">
+            <div style="margin-bottom: 15px;">
+                <a id="stage_number" class="text1"></a>
+                <a type="text" id="aim_score" class="text3"></a><br>
+            </div>
+            <!-- 問題表示 -->
+            <div class="frame">
+                <div class="frame-title caution"><span type="text" class="LetsGuess">Let's Guess!</span></div>
+                <div id="sample" style="height: 50px; width:auto ;"></div>
+            </div>
 
-
-            
             <!-- 入力部分 -->
             <div class="slider">
                 <form oninput="op.value=r_bar.value">
-                    <a class="red">R</a>
+                    <a class="red bar_name">R</a>
                     <input type="range" id="R_number" value="128" min="0" max="255" step="1" name="r_bar"  width="wide" class="input-range R-range">
                     <output name="op" class="value_output">128</output>
                 </form>
             </div>
             <div class="slider">
                 <form oninput="op.value=g_bar.value">
-                    <a class="green">G</a>
+                    <a class="green bar_name">G</a>
                     <input type="range" id="G_number" value="128" min="0" max="255" step="1" name="g_bar" width="wide" class="input-range G-range">
                     <output name="op" class="value_output">128</output>
                 </form>
             </div>
             <div class="slider">
                 <form oninput="op.value=b_bar.value">
-                    <a class="blue">B</a>
+                    <a class="blue bar_name">B</a>
                     <input type="range" id="B_number" value="128" min="0" max="255" step="1" name="b_bar" width="wide" class="input-range B-range">
                     <output name="op" class="value_output">128</output>
                 </form>
             </div>
             <input type="button" value="Guess!" onclick="judgement();" id="guess_button" class="button button1"><br>
-            
+        </div>
             
 
             <!-- <h3>Result</h3> -->
-            <h1 type="text" id="score" class="score" ></h1>
-            <p id="point" class="point"></p>
-            <p id="new_record" class="text3"></p>
-        
-            <div class="flex answer_preview">
-                <div class="left">   
-                    <div id="answer_color" style="height: 50px; width: 150px;"></div>
-                    <p type="text" id="answer_rgb" class="" ></p>
+            <div id="answer">
+                <h1 type="text" id="score" class="score" ></h1>
+                <p id="point" class="point"></p>
+                <p id="new_record" class="text3"></p>
+            
+                <div class="flex answer_preview">
+                    <div class="left">   
+                        <p class="text4">answer RGB</p>
+                        <div id="answer_color" style="height: 50px; width: 150px;"></div>
+                        <p type="text" id="answer_rgb" class="text1" style="margin: 5px 0 20px 0;" ></p>
+                    </div>
+                    <div class="right">
+                        <p class="text4">your RGB</p>
+                        <div id="input_color" style="height: 50px; width: 150px;"></div>
+                        <p type="text" id="input_rgb" class="text1" style="margin: 5px 0 20px 0;" ></p>
+                    </div>
                 </div>
-                <div class="right">
-                    <div id="input_color" style="height: 50px; width: 150px;"></div>
-                    <p type="text" id="input_rgb" class="" ></p>
-                </div>
-            </div>
-            <div class="flex">
-                <div>
-                <input type="button" value="次に進む"
-                onclick="next()"
-                id="next_button" class="button button2" ><br>
-                </div>
-                <div>
-                    <input type="button" value="リセット" id="reset_button" class="button button2"><br>
+                <div class="flex">
+                    <div>
+                    <input type="button" value="次に進む"
+                    onclick="next()"
+                    id="next_button" class="button button2" ><br>
+                    </div>
+                    <div>
+                        <input type="button" value="リセット" id="reset_button" class="button button2"><br>
+                    </div>
                 </div>
             </div>
             
