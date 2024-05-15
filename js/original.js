@@ -74,9 +74,9 @@ function Guess_Action(){
     result = "" ;
     for(i=value-1;i>0;i--){
         if(i>4){
-        result = result + i+"回目&nbsp;<b>"+localStorage.getItem("score"+i)+"点</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ao5:<b>"+localStorage.getItem("Ao5"+i)+"点</b><br>　問題&nbsp;<a style=\"background-color:"+localStorage.getItem("answer_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("answer_rgb"+i)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>　回答&nbsp;<a style=\"background-color:"+localStorage.getItem("input_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("input_rgb"+i)+"<br>"
+        result = result + i+"回目&nbsp;<b>"+localStorage.getItem("score"+i)+"点</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ao5:<b>"+localStorage.getItem("Ao5"+i)+"点</b><br>　問題&nbsp;<a style=\"background-color:"+localStorage.getItem("answer_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("answer_rgb"+i)+"<br>　回答&nbsp;<a style=\"background-color:"+localStorage.getItem("input_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("input_rgb"+i)+"<br>"
         }else{
-            result = result + i+"回目&nbsp;<b>"+localStorage.getItem("score"+i)+"点</b><br>　問題&nbsp;<a style=\"background-color:"+localStorage.getItem("answer_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("answer_rgb"+i)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>　回答&nbsp;<a style=\"background-color:"+localStorage.getItem("input_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("input_rgb"+i)+"<br>"
+            result = result + i+"回目&nbsp;<b>"+localStorage.getItem("score"+i)+"点</b><br>　問題&nbsp;<a style=\"background-color:"+localStorage.getItem("answer_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("answer_rgb"+i)+"<br>　回答&nbsp;<a style=\"background-color:"+localStorage.getItem("input_rgb16"+i)+";\">　 </a>&nbsp;"+localStorage.getItem("input_rgb"+i)+"<br>"
         }
     }
 

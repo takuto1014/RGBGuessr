@@ -73,9 +73,6 @@ footer{
     margin-top: 0px;
     border-radius: 6px;
 }
-.bar_name{
-    border-radius: 3px;
-}
 output{
     text-align: center;
     font-size: 18px;
@@ -97,8 +94,9 @@ output{
     font-size: 11pt;
     margin: 0 0 2px 0;
 }
-#result{
+.result{
     margin-left:10px;
+    /* margin-right: auto; */
     text-align: left;
 }
 .score {
@@ -131,7 +129,7 @@ output{
     
 }
 .answer_preview{
-    margin:20px 0 0 0 ;
+    margin:0px 0 0 0 ;
 }
 h3 {
     padding: 5px 0;
@@ -225,29 +223,22 @@ h3 {
 }
 
 
-.red{
-    background-color: #e94637;
+.bar_name{
+    border-radius: 3px;
     color:white;
     font-weight: bold;
-    padding:5px 20px;
-    margin-right: 5px;
+    padding:4.5px 17px;
+    margin-right: 4px;
     margin-left: -8%;
 }
+.red{
+    background-color: #e94637;
+    }
 .green{ 
     background-color: #00ac47;
-    color:white;
-    font-weight: bold;
-    padding:5px 20px;
-    margin-right: 5px;
-    margin-left: -8%;
 }
 .blue{
     background-color: #2684fc;
-    color:white;
-    font-weight: bold;
-    padding:5px 20px;
-    margin-right: 5px;
-    margin-left: -8%;
 }
 
 
@@ -255,7 +246,7 @@ h3 {
 .button {
     text-align: center;
     display: inline-block;
-    padding: 10px 0;
+    padding: 10px 0px;
     /* text-decoration: none; */
     font-weight: bold;
     border-radius: 4px;
@@ -275,7 +266,7 @@ h3 {
     margin:20px 20px 0px 20px;
 }
 .button2{
-    margin:5px 20px 20px 20px;
+    margin:18px 20px -2px 20px;
 }
 
 input {
