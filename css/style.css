@@ -226,7 +226,7 @@ h3 {
 
 
 .red{
-    background-color: rgba(255, 0, 0, 0.600);
+    background-color: #e94637;
     color:white;
     font-weight: bold;
     padding:5px 20px;
@@ -234,7 +234,7 @@ h3 {
     margin-left: -8%;
 }
 .green{ 
-    background-color: rgba(0, 255, 0, 0.600);
+    background-color: #00ac47;
     color:white;
     font-weight: bold;
     padding:5px 20px;
@@ -242,7 +242,7 @@ h3 {
     margin-left: -8%;
 }
 .blue{
-    background-color: rgb(00, 00, 255, 0.600);
+    background-color: #2684fc;
     color:white;
     font-weight: bold;
     padding:5px 20px;
@@ -290,7 +290,7 @@ input {
 .R-range {
     -webkit-appearance: none;
     appearance: none;
-    background-color: rgba(255, 0, 0, 0.600);
+    background-color:#e94637;
     height: 8px;
     border-radius: 6px;
     &:focus,
@@ -316,7 +316,7 @@ input {
 .G-range {
     -webkit-appearance: none;
     appearance: none;
-    background-color: rgba(0, 255, 0, 0.600);
+    background-color: #00ac47;
     height: 8px;
     border-radius: 6px;
     &:focus,
@@ -342,7 +342,7 @@ input {
 .B-range {
     -webkit-appearance: none;
     appearance: none;
-    background-color: rgba(0, 0, 255, 0.600);
+    background-color: #2684fc;
     height: 8px;
     border-radius: 6px;
     &:focus,
