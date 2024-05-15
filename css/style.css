@@ -95,7 +95,7 @@ output{
 }
 .text4{
     font-size: 11pt;
-    margin: 0;
+    margin: 0 0 2px 0;
 }
 #result{
     margin-left:10px;
@@ -157,8 +157,8 @@ h3 {
 }
 .heading2{
     color: #fff;
-    border-left: solid 6px #000000;/*左側の線*/
-    background:#444444;/*背景色*/
+    border-left: solid 6px #000;/*左側の線*/
+    background:#666;/*背景色*/
     margin-bottom: 10px;/*下のバーとの余白*/
     line-height: 1.0;
     padding: 0.5em;

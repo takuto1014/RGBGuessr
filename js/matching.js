@@ -310,8 +310,8 @@ function MyRecord(){
         document.getElementById("score").innerHTML= score+"点";
         document.getElementById("score_detail").innerText = "Color:"+color_score+"点 Time:"+time_score+"点 ("+result_time +"秒)"
         document.getElementById("new_record").innerText ="New Record!";
-        document.getElementById("answer_rgb").innerHTML = "問題("+R_s+","+G_s+","+B_s+")";
-        document.getElementById("input_rgb").innerHTML = "回答("+R_n+","+G_n+","+B_n+")";
+        document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
+        document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
         }
 
         Ao5record = Math.max.apply(null, all_ao5);

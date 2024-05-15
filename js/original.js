@@ -200,8 +200,8 @@ function MyRecord(){
         if(ao5>localStorage.getItem("my_ao5record")){
             document.getElementById("score").innerText = point;
             document.getElementById("new_record").innerText ="New Record!";
-            document.getElementById("answer_rgb").innerHTML = "問題("+R_s+","+G_s+","+B_s+")";
-            document.getElementById("input_rgb").innerHTML = "回答("+R_n+","+G_n+","+B_n+")";
+            document.getElementById("answer_rgb").innerHTML = "("+R_s+","+G_s+","+B_s+")";
+            document.getElementById("input_rgb").innerHTML = "("+R_n+","+G_n+","+B_n+")";
         }
 
         Ao5record = Math.max.apply(null, all_ao5);

@@ -212,8 +212,8 @@ function Result(){
     }else{
         document.getElementById("score").innerHTML = "You Lose!";
         document.getElementById("point").innerHTML = "ステージ"+stage_number+": "+point;
-        document.getElementById("answer_rgb").innerHTML = "問題<b>("+R_s+","+G_s+","+B_s+")</b>";
-        document.getElementById("input_rgb").innerHTML = "回答<b>("+R_n+","+G_n+","+B_n+")</b>";
+        document.getElementById("answer_rgb").innerHTML = "<b>("+R_s+","+G_s+","+B_s+")</b>";
+        document.getElementById("input_rgb").innerHTML = "<b>("+R_n+","+G_n+","+B_n+")</b>";
         //記録保存
         localStorage.setItem("4stage_number"+stage_number,score)
         localStorage.setItem("4answer_rgb16"+stage_number,RGB_question16)
