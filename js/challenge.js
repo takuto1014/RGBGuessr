@@ -228,6 +228,7 @@ function Result(){
         document.getElementById("next_button").value = "最初から"
         document.getElementById("next_button").id = "restart"
         
+        stage_number++
         // document.getElementById("restart_button").disabled = false
         localStorage.removeItem("4stage_number")
     }

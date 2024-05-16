@@ -219,7 +219,7 @@ function Result(){
         time_score = Math.round(1000 * (3**0.5)/(result_time**0.5))
         score = color_score+time_score
         
-    }else if(result_time<0.5){
+    }else if(result_time<0.4){
         score = 0;
     }else{
         time_score = 1000;
